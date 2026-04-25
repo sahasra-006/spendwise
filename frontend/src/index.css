@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --sidebar-width: 240px;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gray-950 text-gray-100 font-sans antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-700 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-600;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-900 border border-gray-800 rounded-xl p-5;
+  }
+
+  .input {
+    @apply w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2.5
+           text-gray-100 text-sm placeholder-gray-500
+           focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500
+           transition-colors;
+  }
+
+  .label {
+    @apply block text-xs font-medium text-gray-400 uppercase tracking-wide mb-1.5;
+  }
+
+  .btn-primary {
+    @apply flex items-center gap-2 px-4 py-2 bg-brand-500 hover:bg-brand-600
+           text-white text-sm font-medium rounded-lg transition-colors
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply flex items-center gap-2 px-4 py-2 bg-transparent
+           border border-gray-700 hover:border-gray-600 hover:bg-gray-800
+           text-gray-300 text-sm font-medium rounded-lg transition-colors;
+  }
+
+  .btn-danger {
+    @apply flex items-center gap-2 px-3 py-1.5
+           bg-red-500/10 hover:bg-red-500/20
+           text-red-400 text-sm rounded-lg border border-red-500/20 transition-colors;
+  }
+
+  .stat-card {
+    @apply card flex flex-col gap-1;
+  }
+
+  .stat-label {
+    @apply text-xs text-gray-500 uppercase tracking-wide font-medium;
+  }
+
+  .stat-value {
+    @apply text-2xl font-display font-medium text-gray-100;
+  }
+
+  .stat-sub {
+    @apply text-xs text-gray-500;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-gray-400
+           hover:text-gray-100 hover:bg-gray-800 cursor-pointer transition-all;
+  }
+
+  .nav-item.active {
+    @apply text-brand-300 bg-brand-500/10;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .page-enter {
+    @apply animate-slide-up;
+  }
+}
