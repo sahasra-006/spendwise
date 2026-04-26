@@ -1,10 +1,10 @@
-# 💸 Spendwise — Full-Stack Personal Expense Tracker
+# Spendwise — Full-Stack Personal Expense Tracker
 
 A production-grade expense tracking application built with **React + Vite**, **Node.js + Express**, and **MongoDB + Mongoose**, featuring JWT authentication, real-time CRUD, analytics charts, and budget tracking.
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ```
 spendwise/
@@ -66,7 +66,7 @@ spendwise/
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 - Node.js v18+
@@ -192,7 +192,7 @@ Open **http://localhost:5173** in your browser.
 
 ---
 
-## 🗄️ Database Schemas
+## Database Schemas
 
 ### User Schema
 
@@ -238,7 +238,7 @@ Health & Medical | Shopping | Education | Travel | Personal Care | Other
 
 ---
 
-## 🔐 Authentication Flow
+## Authentication Flow
 
 1. User registers → password hashed (bcrypt, 12 rounds) → JWT issued
 2. JWT stored in `localStorage` on the client
@@ -248,7 +248,7 @@ Health & Medical | Shopping | Education | Travel | Personal Care | Other
 
 ---
 
-## 🎯 Features Checklist
+## Features Checklist
 
 - ✅ JWT Authentication (register / login / protected routes)
 - ✅ Expense CRUD (create, read, update, delete)
@@ -270,7 +270,7 @@ Health & Medical | Shopping | Education | Travel | Personal Care | Other
 
 ---
 
-## 🛠️ Production Deployment
+## Production Deployment
 
 ### Backend (e.g. Railway / Render)
 ```bash
@@ -286,7 +286,7 @@ Set env var: `VITE_API_URL=https://your-api.railway.app/api`
 
 ---
 
-## 🧪 Test the API (curl examples)
+## Test the API (curl examples)
 
 ```bash
 # Register
